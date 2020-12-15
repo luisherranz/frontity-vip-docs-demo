@@ -61,6 +61,18 @@ const Post = ({ state, actions, libraries }) => {
       <Content>
         <Html2React html={post.content.rendered} />
       </Content>
+
+      {/* If the page has children, display them. */}
+      {data.children?.map(({ type, id }) => {
+        const child = state.source[type][id];
+        return (
+          <ul key={id}>
+            <li>
+              <Link link={child.link}>{child.title.rendered}</Link>
+            </li>
+          </ul>
+        );
+      })}
     </Container>
   ) : null;
 };
