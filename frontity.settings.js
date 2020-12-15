@@ -30,6 +30,10 @@ const settings = {
         source: {
           url: "https://docs.wpvip.com/",
           homepage: "welcome-to-the-wordpress-vip-documentation",
+          params: {
+            parent: 0,
+            per_page: 99,
+          },
           postTypes: [
             {
               type: "how-tos",
