@@ -14,10 +14,10 @@ const settings = {
         theme: {
           menu: [
             ["Home", "/"],
-            ["Nature", "/category/nature/"],
-            ["Travel", "/category/travel/"],
-            ["Japan", "/tag/japan/"],
-            ["About Us", "/about-us/"],
+            ["Case studies", "/category/case-studies/"],
+            ["Community", "/category/community/"],
+            ["Monthly Roundup", "/category/monthly-roundup/"],
+            ["Support", "/accessing-vip-support/"],
           ],
           featured: {
             showOnList: false,
