@@ -1,4 +1,6 @@
-import Code from "./code";
+import { loadable } from "frontity";
+
+const Code = loadable(() => import("./code"));
 
 const codeBlockProcessor = {
   name: "code-block-syntax",
