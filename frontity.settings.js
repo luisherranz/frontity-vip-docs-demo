@@ -25,6 +25,7 @@ const settings = {
       state: {
         source: {
           url: "https://docs.wpvip.com/",
+          homepage: "welcome-to-the-wordpress-vip-documentation",
         },
       },
     },
