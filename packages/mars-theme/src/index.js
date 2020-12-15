@@ -2,6 +2,7 @@ import Theme from "./components";
 import image from "@frontity/html2react/processors/image";
 import iframe from "@frontity/html2react/processors/iframe";
 import link from "@frontity/html2react/processors/link";
+import technicalReferenceHandler from "./handlers/technical-references";
 
 const marsTheme = {
   name: "@frontity/mars-theme",
@@ -50,6 +51,9 @@ const marsTheme = {
        * You can add your own processors too.
        */
       processors: [image, iframe, link],
+    },
+    source: {
+      handlers: [technicalReferenceHandler],
     },
   },
 };
