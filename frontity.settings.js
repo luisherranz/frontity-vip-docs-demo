@@ -52,6 +52,7 @@ const settings = {
     "@frontity/tiny-router",
     "@frontity/html2react",
     "frontity-code-block-syntax",
+    "@frontity/yoast",
   ],
 };
 

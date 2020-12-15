@@ -23,6 +23,7 @@
     "@frontity/tiny-router": "^1.2.4",
     "@frontity/wp-source": "^1.10.0",
     "frontity-code-block-syntax": "file:packages/frontity-code-block-syntax",
-    "frontity": "^1.13.0"
+    "frontity": "^1.13.0",
+    "@frontity/yoast": "^2.0.1"
   }
 }
