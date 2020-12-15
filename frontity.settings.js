@@ -26,6 +26,18 @@ const settings = {
         source: {
           url: "https://docs.wpvip.com/",
           homepage: "welcome-to-the-wordpress-vip-documentation",
+          postTypes: [
+            {
+              type: "how-tos",
+              endpoint: "how-tos",
+              archive: "/how-tos",
+            },
+            {
+              type: "technical-references",
+              endpoint: "technical-references",
+              archive: "/technical-references",
+            },
+          ],
         },
       },
     },
