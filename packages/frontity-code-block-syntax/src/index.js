@@ -1,23 +1,24 @@
-import React from "react";
+import Code from "./code";
 
-const Root = () => {
-  return (
-    <>
-      You can edit your package in:
-      <pre>packages/code-block-syntax/src/index.js</pre>
-    </>
-  );
+const codeBlockProcessor = {
+  name: "code-block-syntax",
+  test: ({ node }) =>
+    node.component === "pre" && node.props.className?.match(/prism/),
+  processor: ({ node }) => {
+    const code = node.children.find((child) => child.component === "code");
+    const [_, language] = code.props.className?.match(/lang-(\w*)\b/);
+    node.props.className = `${node.parent.props.className} language-${language}`;
+    code.component = Code;
+    code.props.language = language;
+    return node;
+  },
 };
 
 export default {
   name: "code-block-syntax",
-  roots: {
-    codeBlockSyntax: Root
+  libraries: {
+    html2react: {
+      processors: [codeBlockProcessor],
+    },
   },
-  state: {
-    codeBlockSyntax: {}
-  },
-  actions: {
-    codeBlockSyntax: {}
-  }
 };
