@@ -12,7 +12,11 @@ const settings = {
       name: "@frontity/mars-theme",
       state: {
         theme: {
-          menu: [["Home", "/"]],
+          menu: [
+            ["Home", "/"],
+            ["How-to Guides", "/how-tos/"],
+            ["Technical Reference", "/technical-references/"],
+          ],
           featured: {
             showOnList: false,
             showOnPost: false,
