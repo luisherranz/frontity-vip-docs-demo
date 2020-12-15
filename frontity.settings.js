@@ -30,7 +30,7 @@ const settings = {
       name: "@frontity/wp-source",
       state: {
         source: {
-          url: "https://test.frontity.org",
+          url: "https://wpvip.com/",
         },
       },
     },
