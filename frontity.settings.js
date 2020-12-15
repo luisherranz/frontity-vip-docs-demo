@@ -12,13 +12,7 @@ const settings = {
       name: "@frontity/mars-theme",
       state: {
         theme: {
-          menu: [
-            ["Home", "/"],
-            ["Case studies", "/category/case-studies/"],
-            ["Community", "/category/community/"],
-            ["Monthly Roundup", "/category/monthly-roundup/"],
-            ["Support", "/accessing-vip-support/"],
-          ],
+          menu: [["Home", "/"]],
           featured: {
             showOnList: false,
             showOnPost: false,
@@ -30,7 +24,7 @@ const settings = {
       name: "@frontity/wp-source",
       state: {
         source: {
-          url: "https://wpvip.com/",
+          url: "https://docs.wpvip.com/",
         },
       },
     },
